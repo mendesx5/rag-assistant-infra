@@ -3,8 +3,8 @@ services:
     image: postgres:16
     environment:
       POSTGRES_DB: rag_assistant
-      POSTGRES_USER: gabriel
-      POSTGRES_PASSWORD: changeme
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
